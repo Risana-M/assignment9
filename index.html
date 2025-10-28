@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phonebook</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container py-5">
+        <div class="card shadow p-4">
+            <h2 class="text-center mb-4 "><img width="100" height="100"
+                    src="https://img.icons8.com/external-goofy-color-kerismaker/96/external-Phonebook-communication-goofy-color-kerismaker.png" alt="todo-list" />My Phone Book</h2>
+
+
+
+
+
+                       <!--contact form-->
+            <div class="form-section">
+                <input type="text" id="name" placeholder="Enter name">
+                <input type="text" id="phone" placeholder="Enter phone number">
+              
+                <button id="addBtn">+ Add contact</button>
+            </div>
+
+            <!--search-->
+             <div class="d-flex gap-2 mb-3">
+        <input type="text" id="search" class="form-control" placeholder="Search by name or phone number">
+        <button id="viewAllBtn" class="btn btn-secondary">
+          <i class="bi bi-list-ul"></i> View All
+        </button>
+      </div>
+            
+
+            <!--contact list-->
+            <div id="contacts" class="contact-list">
+
+            </div>
+        </div>
+   </div>
+  
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
